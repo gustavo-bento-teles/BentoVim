@@ -25,6 +25,7 @@ return {
       ensure_installed = {
         "clangd",
         "csharp-language-server",
+        "pyright",
       },
     },
   },
@@ -37,6 +38,7 @@ return {
         "c",
         "cpp",
         "c_sharp",
+        "python",
       },
     },
   },
