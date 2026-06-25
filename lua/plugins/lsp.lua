@@ -9,6 +9,7 @@ return {
             "clangd",
             "--background-index",
             "--clang-tidy",
+            "--query-driver=**",
           },
         },
 
