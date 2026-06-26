@@ -10,6 +10,12 @@ return {
   },
 
   config = function()
+    local platformio_ini = vim.fn.getcwd() .. "/platformio.ini"
+
+    if vim.fn.filereadable(platformio_ini) == 0 then
+      return
+    end
+
     vim.g.pioConfig = {
       lsp = "clangd",
       clangd_source = "compiledb",
